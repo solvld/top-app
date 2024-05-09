@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { Noto_Sans } from 'next/font/google';
-import './globals.css';
-
+import 'app/ui/styles/globals.css';
 const inter = Noto_Sans({
   weight: ['300', '400', '500', '700'],
   subsets: ['latin'],
