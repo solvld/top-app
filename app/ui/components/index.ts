@@ -1,3 +1,4 @@
-import Title from './title/title';
+import Title from './Title/Title';
+import Button from './Button/Button';
 
-export { Title };
+export { Title, Button };

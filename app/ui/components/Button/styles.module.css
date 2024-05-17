@@ -1,0 +1,40 @@
+.button{
+  display: inline-block;
+
+  box-sizing: border-box;
+  padding: 10px;
+
+  cursor: pointer;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.primary{
+  background-color: var(--color-primary);
+  color: var(--color-surface-light);  
+}
+.primary:hover{
+  background-color: var(--color-primary-hover);
+}
+
+.ghost{
+  background: none;
+  color: var(--color-text);
+}
+.ghost:hover{
+  background-color: var(--color-primary);
+  color: var(--color-surface-light);  
+}
+
+.arrow{
+  display: inline-block;
+
+  margin-left: 10px;
+}
+
+.down{
+  transform: rotate(90deg);
+}
