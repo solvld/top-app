@@ -1,8 +1,11 @@
-import Image from 'next/image';
-import { Button, Title, Text, Tag } from 'app/ui/components';
+'use client';
+import { Button, Title, Text, Tag, Rating } from 'app/ui/components';
+import { useState } from 'react';
+
 export default function Home() {
+  const [rating, setRating] = useState<number>(4);
   return (
-    <main>
+    <>
       <Title>Main</Title>
       <Button arrow="right">button</Button>
       <Button appearance="ghost">button</Button>
@@ -18,6 +21,7 @@ export default function Home() {
       <Tag size="m" color="grey" href="/fii">
         link
       </Tag>
-    </main>
+      <Rating rating={rating} isEditable setRating={setRating} />
+    </>
   );
 }
